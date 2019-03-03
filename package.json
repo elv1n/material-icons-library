@@ -18,6 +18,10 @@
   "dependencies": {
     "react": "^16.8.3"
   },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
   "sideEffects": false,
   "repository": "elv1n/build-react-icons",
   "publishConfig": {
