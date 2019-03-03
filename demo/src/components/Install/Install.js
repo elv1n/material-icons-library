@@ -21,7 +21,7 @@ function Install({ library, classes }) {
   return (
     <CopyToClipboard onCopy={() => setCopied(true)} text={text}>
       <Tooltip onClose={closeWithTimeout} title={title}>
-        <Grid item md={12}>
+        <Grid item xs={12}>
           <Typography align="center" className={classes.root}>
             {text}
           </Typography>
