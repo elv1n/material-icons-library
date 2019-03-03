@@ -1,10 +1,8 @@
-## Material 1000+ icons library
+## Material 1000+ icons library [Demo](https://elv1n.github.io/material-icons-library/)
 
 [![npm version](https://badgen.net/npm/v/material-icons-library)](https://npm.im/material-icons-library) [![npm downloads](https://badgen.net/npm/dm/material-icons-library)](https://npm.im/material-icons-library)
 
 This package provide [Material Icons Library](https://icons.pixsellz.io/) packaged as a set of React components
-
-[Demo](https://elv1n.github.io/material-icons-library/)
 
 ### 💣 Features
 * 1000+ Icons in 16 Categories
