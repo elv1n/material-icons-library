@@ -4,7 +4,7 @@
   "description": "Material Icons Library converted to React components",
   "main": "index.js",
   "author": "Elvin Dzhavadov",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "scripts": {
     "builder": "npm-run-all builder:*",
     "builder:outlined": "build-react-icons -o ./src/outlined -s ./icons/Outlined --rename-filter ./scripts/rename-filter --icon-worker ./scripts/icon-worker",
