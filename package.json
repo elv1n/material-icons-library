@@ -1,0 +1,41 @@
+{
+  "name": "material-icons-library",
+  "version": "0.0.1",
+  "description": "Material Icons Library converted to React components",
+  "main": "index.js",
+  "author": "Elvin Dzhavadov",
+  "license": "MIT",
+  "scripts": {
+    "builder": "npm-run-all builder:*",
+    "builder:outlined": "build-react-icons -o ./src/outlined -s ./icons/Outlined --rename-filter ./scripts/rename-filter --icon-worker ./scripts/icon-worker",
+    "builder:twotoyne": "build-react-icons -o ./src/twotone -s \"./icons/Two Tone\" --rename-filter ./scripts/rename-filter --icon-worker ./scripts/icon-worker",
+    "builder:copy": "node ./scripts/copy-utils",
+    "build": "npm-run-all build:*",
+    "build:outlined": "build-react-library -s ./src/outlined -o ./build/outlined",
+    "build:twotone": "build-react-library  -s ./src/twotone -o ./build/twotone --libName material-icons-two-tone",
+    "deploy": "gh-pages -d demo/build"
+  },
+  "dependencies": {
+    "react": "^16.8.3"
+  },
+  "sideEffects": false,
+  "repository": "elv1n/build-react-icons",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.3.4",
+    "build-react-icons": "^0.0.6",
+    "build-react-library": "^0.0.5",
+    "eslint-config-elv1n-react": "^0.0.10",
+    "fs-extra": "^7.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "elv1n-react"
+    ]
+  }
+}
